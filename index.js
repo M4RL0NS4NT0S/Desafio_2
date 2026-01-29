@@ -28,9 +28,9 @@ Se vitórias for maior ou igual a 101 = Imortal
 Ao final deve se exibir uma mensagem:
 "O Herói tem de saldo de **{saldoVitorias}** está no nível de **{nivel}**/
 
-let nomeDoHeroi = "Marlon"
-let quantidadeDeXp = 5000
-
+function  vitorias () {
+    
+    {
 if (quantidadeDeXp<=1000){
     console.log ("O Herói de nome " + nomeDoHeroi + " está no nível de " + quantidadeDeXp + " Ferro")
 } else if ( quantidadeDeXp >1001 && quantidadeDeXp <= 2000) {
@@ -47,3 +47,12 @@ if (quantidadeDeXp<=1000){
     console.log (" O Herói de nome " + nomeDoHeroi + " está no nível de " + quantidadeDeXp + " Imortal")
 }else {console.log ("O Herói de nome " + nomeDoHeroi + " está no nível de " + quantidadeDeXp + " Radiante ")}
 
+    
+    }   
+}
+
+function nivel (){
+    console.log ("nivel do herio")
+}asd
+
+ console.log ("O Herói tem de saldo de" + vitoria + "Está no nivel de " + nivel)
