@@ -28,31 +28,29 @@ Se vitórias for maior ou igual a 101 = Imortal
 Ao final deve se exibir uma mensagem:
 "O Herói tem de saldo de **{saldoVitorias}** está no nível de **{nivel}**/
 
-function  vitorias () {
-    
-    {
-if (quantidadeDeXp<=1000){
-    console.log ("O Herói de nome " + nomeDoHeroi + " está no nível de " + quantidadeDeXp + " Ferro")
-} else if ( quantidadeDeXp >1001 && quantidadeDeXp <= 2000) {
-    console.log ("O Herói de nome " + nomeDoHeroi + " está no nível de " + quantidadeDeXp + " Bronze")
-}else if (quantidadeDeXp >2001 && quantidadeDeXp<= 5000){
-    console.log ("O Herói de nome " + nomeDoHeroi + " está no nível de " + quantidadeDeXp + " Prata")
-}else if (quantidadeDeXp >5001 && quantidadeDeXp<7000){
-    console.log ("O Herói de nome " + nomeDoHeroi + " está no nível de " + quantidadeDeXp + " Ouro")
-}else if (quantidadeDeXp >7001 && quantidadeDeXp<8000){
-    console.log ("O Herói de nome " + nomeDoHeroi + " está no nível de " + quantidadeDeXp + " Platino")
-}else if (quantidadeDeXp >8001 && quantidadeDeXp<9000){
-    console.log (" O Herói de nome " + nomeDoHeroi + " está no nível de " + quantidadeDeXp + " Acendente")
-}else if (quantidadeDeXp< 10000){
-    console.log (" O Herói de nome " + nomeDoHeroi + " está no nível de " + quantidadeDeXp + " Imortal")
-}else {console.log ("O Herói de nome " + nomeDoHeroi + " está no nível de " + quantidadeDeXp + " Radiante ")}
+//vitorias ("marlon", 1000)
 
-    
-    }   
+
+function  vitorias ( Vitoria ) {
+let resultado  
+
+if ( Vitoria <=10){
+    resultado = ( Vitoria + " Ferro")
+} else if ( Vitoria >11 && Vitoria <= 20) {
+    resultado = ( Vitoria +" Bronze")
+}else if ( Vitoria >21 && Vitoria<= 50){
+    resultado =  (Vitoria +  " Prata")
+}else if (Vitoria >51 && Vitoria<70){
+     resultado = (Vitoria + " Ouro")
+}else if (Vitoria >71 && Vitoria<80){
+    resultado = (Vitoria + " Diamante")
+}else if (Vitoria >81 && Vitoria<90){
+    resultado = ( Vitoria +" Acendente")
+}else if (Vitoria< 100){
+    resultado = (Vitoria + " Imortal")
+}else {resultado (Vitoria >101 +  " Radiante ")}
+ 
+   return resultado 
 }
 
-function nivel (){
-    console.log ("nivel do herio")
-}asd
-
- console.log ("O Herói tem de saldo de" + vitoria + "Está no nivel de " + nivel)
+console.log (vitorias ( 75 ))
