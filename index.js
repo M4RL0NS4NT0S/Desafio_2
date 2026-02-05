@@ -29,9 +29,9 @@ Ao final deve se exibir uma mensagem:
 "O Herói tem de saldo de **{saldoVitorias}** está no nível de **{nivel}**/
 
 //vitorias ("marlon", 1000)
+Vitoria(55)
 
-
-function  vitorias ( Vitoria ) {
+function  Vitoria () {
 let resultado  
 
 if ( Vitoria <=10){
@@ -50,7 +50,9 @@ if ( Vitoria <=10){
     resultado = (Vitoria + " Imortal")
 }else {resultado (Vitoria >101 +  " Radiante ")}
  
-   return resultado 
+   return resultado
+   
+   console.log ( "O Herói tem de saldo de " + Vitoria)
 }
 
-console.log (vitorias ( 75 ))
+
